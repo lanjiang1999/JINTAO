@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*后代选择器*/
+p span{
+	color:red;
+}
+
+/*子元素选择器*/
+h2>span{
+	color:blue;
+}
+<
+}
+</style>
+</head>
+<body>
+		<!--当p下包含span时，span内的内容使用到样式  -->
+		<p>2018年10月17日<span>11:07:39</span></p>
+		<!--非p下span不能使用  -->
+		<a>2018年10月17日<span>11:08:22</span></a>
+		<!--当p下包含多个span都可以使用样式  -->
+		<p>2018年<span>10</span>月17日<span>11:07:39</span></p>
+		<!--无论p下的多少级，只要包含span都能使用-->
+		<p><i>2018年<span>10</span>月17日<span>11:07:39</span></i></p>
+		
+		<h2>阿斯<span>顿撒</span>多撒多</h2>
+		<!--只有在h2的下一级才能使用  -->
+		<h2><i><span>阿斯</span>顿撒多撒多</i></h2>
+		
+		
+		
+		
+
+
+</body>
+</html>

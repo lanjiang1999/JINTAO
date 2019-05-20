@@ -1,0 +1,17 @@
+package day0605;
+
+public class Student extends Person {
+	String school;
+	
+	public Student(String name, String gender, int age) {
+		
+	}
+
+	public String toString() {
+		//super
+		//在子类中
+		//对父类对象的特殊引用
+		return super.toString()+","+school;
+	}
+
+}

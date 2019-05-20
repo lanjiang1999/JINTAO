@@ -1,0 +1,42 @@
+package day1201;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> map = new HashMap<>();
+		map.put(9527, "ÌÆ²®»¢");
+		map.put(9528, "ÇïÏã");
+		map.put(9529, "Âí»¯ÌÚ");
+		map.put(9530, "·ï½ã");
+		map.put(9531, "Alan Waker");
+		map.put(9532, "·É¿Æ");
+		map.put(9532, "FAKER");
+		map.put(9534, "´óÄ§Íõ");
+		map.put(9535, "shit");
+		map.put(9536, "null");
+		map.put(null, "---");
+		System.out.println(map.size());
+		System.out.println(map);
+		System.out.println(map.get(9527));
+		System.out.println(map.get(9600));
+		System.out.println(map.remove(9530));
+		
+		
+		System.out.println("\n--------------");
+		Set<Integer> keys = map.keySet();
+		for ( Iterator<Integer> it = keys.iterator(); it.hasNext(); ) {
+			Integer k = it.next();
+			String v = map.get(k);
+			System.out.println(k+" : " + v);
+			
+		}
+		
+		
+	}
+
+}

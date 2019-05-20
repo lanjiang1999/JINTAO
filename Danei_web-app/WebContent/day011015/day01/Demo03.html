@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+	
+	<!-- 1.标题：（h1-h6） -->
+	<h1>上海</h1>
+	<h2>北京</h2>
+	<h3>广州</h3>
+	<h4><a href="#changbaishan">长白山</a></h4>
+	
+	<!-- 2.段落  -->
+		<p>去玩儿</p>    <!--‘<p> </p>’用于换行  -->
+		<p>去玩儿</p>
+		<p>阿萨德</p>
+		<p>整除表</p>
+		
+		<!-- 3.有序列表 -->
+		<ol>
+			<li>湖南</li>
+			<li>湖北</li>
+		</ol>
+		
+		<!-- 3.1无序列表 -->
+		<ul>
+			<li>胡建</li>
+			<li>湖蓝</li>
+		</ul>
+		
+		<!-- 3.2嵌套 -->
+		<ol>
+			<li>湖南
+				<ul>
+					<li>长沙</li>
+					<li>岳阳</li>
+				</ul>
+			</li>
+			
+			<li>广东
+				<ul>
+					<li>广州</li>
+					<li>佛山</li>
+				</ul>
+			</li>
+		</ol>
+		<!--4.行内元素  -->
+		<p><i>天河区</i>天寿路天寿大厦105号</p>		<!--‘<i>  </i>’倾斜 -->
+		<p>天河区<b>天寿路</b>天寿大厦105号</p>		<!--‘<b>  </b>’加粗 -->
+		<p>天河区天寿路<u>天寿大厦</u>105号</p>		<!--‘<u>  </u>’下划线 -->
+		<p>天河区天寿路天寿大厦<span style="color:red">105</span>号</p>
+		<!-- 字体颜色 -->
+		<p>天河区天寿路天寿大厦<span style="font-size:40px">105</span>号</p>
+		<!-- 字体大小 -->
+		
+		<!-- 5.空格折叠：默认情况下多个换行或者空格都会折叠为单个空格 -->
+		去玩&nbsp;&nbsp;&nbsp;儿<br>				<!-- &nbsp：空格 bar 换行 -->
+		去玩&nbsp;&nbsp;&nbsp;儿<br>
+		去玩&nbsp;&nbsp;&nbsp;儿<br>
+		去玩&nbsp;&nbsp;&nbsp;儿<br>
+		
+		
+		<!-- 6.图片 
+		相对路径：写出图片和网页的相对位置
+		绝对路径：写出图片存储的完整路径 -->
+		<!-- 图片和网页平级 -->
+		<img src="01.jpg">
+		
+		<!-- 图片在网页下级 -->
+		<img src="Picture/02.jpg">
+		
+		<!-- 图片在网页上级 -->
+		<img src="../03.jpg">
+		
+		<!-- 通常情况 -->
+		<img src="../image/04.jpg">
+		
+		<!-- 绝对路径 -->
+		<img src="D:/Java/b.jpg">
+		
+		
+		<img src="x.jpg" alt="无法显示">
+		
+		<!-- 7.超链接 -->
+		<p>
+			<a href="http://www.baidu.com">百度一下</a>
+		</p>
+		
+		<p>
+			<a href="http"://tmooc.cn target=" blank">达内学习</a>
+		</p>
+		
+		<p>
+			<a href="http://LOL.qq.com">
+			<img src="01.jpg"></a>
+		</p>
+		
+		<!--7. 锚点 -->
+		<p>
+			<a name="changbaishan">长白山是个奥术大师多撒多撒大所多。</a>
+		
+		</p>
+		
+		<p>
+			<a href="#">回到顶端</a>
+		</p>
+		
+		<!-- 8.表格 -->
+		<table border="1" cellspacing="0" width="50%"  
+		bgcolor="lightgray" bordercolor="blue">		<!-- border:边框；
+													cellspacing:边框距离-->
+														
+		<tr>									<!-- tr行，td列 -->
+				<td>北京</td>
+				<td>上海</td>
+				<td>广州</td>
+		</tr>
+		<tr>
+			<td>湖南</td>
+			<td>长沙</td>
+			<td>岳阳</td>
+		</tr>
+		</table>
+		<!-- 8.1跨行，跨列 -->
+			<table border="1" cellspacing="0" width="30%">
+				<tr>
+					<td colspan="2">苹果</td>			<!--colspan:行 -->
+					<!-- <td>香蕉</td> -->
+					<td>梨子</td>
+				</tr>
+				<tr>
+					<td rowspan="2">橘子</td>			<!--rowspan:列-->
+					<td>葡萄</td>
+					<td>榴莲</td>
+				</tr>
+				<tr>
+					<!-- <td>西瓜</td> -->
+					<td>桃子</td>
+					<td>李子</td>
+				</tr>						
+			</table>
+			<!--行分组  -->
+			<table border="1" cellspacing="0"> 
+				<thead style="color:red">
+				<tr>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				</thead>
+				
+				<tbody style="color:blue">
+				<tr>
+					<td>2</td>
+					<td>2</td>
+				</tr>
+				</tbody>
+				
+				<tfoot style="color:green">
+				<tr>
+					<td>3</td>
+					<td>3</td>
+				</tr>
+				</tfoot>
+			</table>
+		
+		
+</body>
+
+</html>
